@@ -2,12 +2,17 @@ import { StyledHeader, StyledName } from './Header.styles';
 import Logo from '../../atoms/Logo/Logo';
 import Logout from '../../atoms/Logout/Logout';
 
-const Header = () => {
+const Header = ({user}) => {
+    const { isLoggedIn } = user;
     return (
         <StyledHeader>
-            <StyledName>Luke Skywalker</StyledName>
+            {
+                isLoggedIn ? <StyledName>{user.name}</StyledName> : ''
+            }
             <Logo />
-            <Logout />
+            {
+                isLoggedIn ? <Logout /> : ''
+            } 
         </StyledHeader>
     );
 }

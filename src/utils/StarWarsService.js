@@ -33,6 +33,9 @@ export const getUser = async ({username, password}) => {
 }
 
 export const getPlanets = async (searchTerm) => {
+    if (!searchTerm) {
+        return [];
+    }
     try {
         const { results } = await getRequest(ApiConfig.planets, {
             search: searchTerm

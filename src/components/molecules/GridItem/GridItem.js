@@ -1,11 +1,13 @@
-import { StyledGrid } from './GridItem.styles';
-import Heading from '../../atoms/Heading';
-import GridItem from './GridItem';
+import { StyledGridItem } from './GridItem.styles';
+import Heading from '../../atoms/Heading/Heading';
 
 const GridItem = ({ data }) => {
   return (
-    <StyledGridItem >
-        <Heading></Heading>
+    <StyledGridItem index={data.sortIndex}>
+        <Heading tag="h2">{data.name}</Heading>
+        <div>
+          Population: {data.population}
+        </div>
     </StyledGridItem>
   );
 }

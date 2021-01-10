@@ -13,6 +13,7 @@ export const StyledLogout = styled.div(({ theme: { breakpoints, up, color, fontS
         padding: 10px;
         border-radius: 50%;
         font-size: ${fontSize.small};
+        cursor: pointer;
 
         ${up(breakpoints.md)} {
             font-size: ${fontSize.medium};
