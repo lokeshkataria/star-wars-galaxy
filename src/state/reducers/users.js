@@ -17,6 +17,7 @@ export const user = (state = initialUser, action) => {
         case USER_ADD:
             return setUser(state, { ...action.payload, loading: false, isLoggedIn: !action.payload.authenticationFailed});
         case USER_REMOVE:
+            console.log(1);
             return setUser(state, {isLoggedIn: false});
         case USER_FETCH_ERROR:
             return setUser(state, { error: true, loading: false });

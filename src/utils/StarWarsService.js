@@ -1,5 +1,5 @@
 import { getRequest } from './HttpUtils';
-import { setItem, getItem } from './StorageService';
+import { setItem, getItem, removeItem } from './StorageService';
 import ApiConfig from '../config/api.json';
 
 const USER_STORAGE_NAME = 'user';
@@ -51,4 +51,8 @@ export const getUserAuthentication = () => {
     let user = {};
     user = getItem(USER_STORAGE_NAME);
     return user ? JSON.parse(user) : null;
+}
+
+export const logout = () => {
+    removeItem(USER_STORAGE_NAME);
 }

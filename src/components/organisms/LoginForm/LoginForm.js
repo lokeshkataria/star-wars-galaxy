@@ -14,7 +14,7 @@ const LoginForm = () => {
   return (
     <StyledLoginForm onSubmit={handleSubmit(onSubmit)}>
         <Input labelText="Username" id="username" name="username" inputRef={register({ required: true })} />
-        <Input labelText="Password" id="password" name="password" inputRef={register({ required: true })} />
+        <Input labelText="Password" id="password" name="password" type="password" inputRef={register({ required: true })} />
         <div>
           {errors.username && <ErrorMsg>Username is required</ErrorMsg>}
           {errors.password && <ErrorMsg>Password is required</ErrorMsg>}

@@ -2,6 +2,7 @@ export const USER_ADD = 'USER_ADD';
 export const USER_REMOVE = 'USER_REMOVE';
 export const PLANETS_SET = 'PLANETS_SET';
 export const USER_LOGIN = 'USER_LOGIN';
+export const USER_LOGOUT = 'USER_LOGOUT';
 export const PLANETS_SEARCH = 'PLANETS_SEARCH';
 export const USER_FETCH_ERROR = 'USER_FETCH_ERROR';
 export const PLANETS_FETCH_ERROR = 'PLANETS_FETCH_ERROR';

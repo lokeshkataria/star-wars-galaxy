@@ -8,7 +8,8 @@ import {
     USER_VERIFY,
     USER_LOADING,
     PLANETS_LOADING,
-    USER_REMOVE
+    USER_REMOVE,
+    USER_LOGOUT
 } from './constants';
 
 export const addUser = (payload) => {
@@ -74,6 +75,12 @@ export const userVerify = () => {
 }
 
 export const userLogout = ()  => {
+    return {
+        type: USER_LOGOUT
+    }
+}
+
+export const userRemove = ()  => {
     return {
         type: USER_REMOVE
     }
