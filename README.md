@@ -1,7 +1,7 @@
 # Starw Wars Galaxy
 The project provides help in searching the galaxy planets using api from https://swapi.tech. User has to login as a character from STAR WARS using the character name as the username and birth year as the password.
 eg:
-Username: Luke Skywalker
+Username: Luke Skywalker,
 Password : 19BBY
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
