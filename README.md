@@ -23,7 +23,7 @@ Launches the test runner in the interactive watch mode.\
 
 Builds the app for production to the `build` folder.\
 
-## Libbraries Used:
+## Libraries Used:
 1. Styled Components
 2. Axios
 3. Redux
