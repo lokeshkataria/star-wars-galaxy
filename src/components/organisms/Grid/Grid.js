@@ -7,10 +7,15 @@ const Grid= ({ listData }) => {
   newList.sort((a,b) => +(a.population) - +(b.population));
   newList = newList.map((item, index) => ({...item, sortIndex: index}));
   newList.sort((a,b) => a.index - b.index);
+  const breakpointColumnsObj = {
+    default: 3,
+    992: 3,
+    768: 1
+  };
   return (
     <StyledGrid>
       <Masonry
-      breakpointCols={3}
+      breakpointCols={breakpointColumnsObj}
       className="masonry-grid"
       columnClassName="masonry-grid_column">
       {

@@ -4,8 +4,12 @@ export const StyledGrid = styled.div(({ theme: { size, breakpoints, up, color }}
     width: 100%;
     .masonry-grid {
         display: flex;
-        margin-left: -30px; /* gutter size offset */
+        margin-left: -15px;
         width: 100%;
+
+        ${up(breakpoints.md)} {
+            margin-left: -30px; /* gutter size offset */
+        }
     }
 
     .masonry-grid_column {
